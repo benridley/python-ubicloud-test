@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python_ubicloud_test"
+version = "0.1.0"
+description = "A simple hello world app"
+authors = ["Ben Ridley <benridley29@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+waitress = "^2.1.2"
+Flask = "^2.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ubitest = 'python_ubicloud_test.main:main'
