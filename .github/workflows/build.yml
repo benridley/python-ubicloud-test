@@ -2,7 +2,7 @@ name: build-container
 on: [push]
 jobs:
   build-image:
-    runs-on: ubuntu-latest
+    runs-on: ubicloud
     steps:
       - uses: actions/checkout@v4
       - name: Set up Docker Buildx
